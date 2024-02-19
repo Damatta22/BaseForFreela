@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frella Mario</title>
+  </head>
+  <body>
+    <div onclick="hiddenForm()" class="mask-form"></div>
+    <div class="header">
+      <img src="./img/logo-header.png" alt="logo-header-mario" />
+      <a>Home</a>
+      <a href="./components/PageServices/services.html">Services</a>
+      <a class="CallForm" onclick="showForm()">Contact Us</a>
+    </div>
+    <div class="wrapper">
+      <div class="box-left">
+        <img class="logo-mario" src="./img/logo.png" alt="logo do mario" />
+        <p>
+          Mario & Luigi Plumbers - Solving your Hydraulic Problems with Style!
+        </p>
+        <p>
+          Have you ever found yourself in a plumbing emergency situation?
+          Unexpected leaks, clogged pipes or taps that won't stop dripping?
+          Don't worry because we are here to save the day! We present to you the
+          most famous plumbers in the mushroom kingdom - Mario & Luigi!
+        </p>
+        <button onclick="showForm()" class="contact">Contact</button>
+      </div>
+
+      <div class="box-right">
+        <img
+          class="logo-mario-luigi"
+          src="./img/mario.png"
+          atl="logo Mario & Luidi"
+        />
+      </div>
+    </div>
+
+    <div class="box-video">
+      <video src="/img/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="mask"></div>
+
+    <a
+      class="link-app"
+      href="https://api.whatsapp.com/send?phone=5531983597777&text=Hello!%20I%20need%20the%20help%20of%20the%20Mario%20Brothers!"
+    >
+      <img src="./img/whats.png" alt="link for whatssap"
+    /></a>
+
+    <form
+      class="form-contact"
+      action="https://formcarry.com/s/DdXU_CZhPX2"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input type="text" name="Name" placeholder="Name" />
+      <input type="tel" name="Phone" placeholder="Phone" />
+      <textarea
+        name="WHAT YOU NEED?"
+        placeholder="How can I help you?"
+      ></textarea>
+      <button type="submit" class="contact">Check Price</button>
+    </form>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
